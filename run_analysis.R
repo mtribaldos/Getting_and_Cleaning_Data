@@ -13,7 +13,7 @@ run_analysis <- function() {
     train_features <- read.csv("UCI HAR Dataset/train/X_train.txt", sep = "", header = FALSE)
     features <- rbind(test_features, train_features)   
     names(features) <- read.csv("UCI HAR Dataset/features.txt", sep = "", header = FALSE)[,2]
-    selected_features <- features[, grep("mean..|std..", names(features))] 
+    selected_features <- features[, grep(".*mean.*|.*std.*", names(features), ignore.case=TRUE)] 
       
     ## Read and merge test and training activity types. 
     ## Add the column name to the activity types column
