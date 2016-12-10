@@ -33,9 +33,9 @@ run_analysis <- function() {
     ## Substitute activity id for activity type (descriptive)
     activity_labels <- read.csv("UCI HAR Dataset/activity_labels.txt", sep = "", header = FALSE)
     names(activity_labels) <- c("activity_id", "activity_type")
-    merge(activities, activity_labels, by.x = "activity", by.y = "activity_id", all.x = TRUE)
-    activities <- activities[, -grep("activity", names(activities))]
+    activities <- merge(activities, activity_labels, by.x = "activity", by.y = "activity_id", all.x = TRUE)
+    activity <- activities$activity_type
 
     # Generate the definitive dataset
-    dataset <- cbind(subjects, selected_features, activities)
+    dataset <- cbind(selected_features, subjects, activity)
 }  
