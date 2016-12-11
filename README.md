@@ -16,11 +16,13 @@ $ git clone https://github.com/mtribaldos/Getting_and_Cleaning_Data.git
 
 ## Usage
 
-Enter the R command line interpreter and type:
+Enter the R command line interpreter and simply type:
 
 ```
+> cd Getting_and_Cleaning_Data/
 > source("run_analysis.R")
 > run_analysis()
 ```
 
-After that, the file "tidy_dataset.txt" is created. This course project's form gets fed with the contents from this file.
+The first time the function `run_analysis()` gets executed, it downloads the original dataset from the internet, so it's not needed the user to perform previously this step.
+Once the completion of `run_analysis()` the file "tidy_dataset.txt" is created. This course project's form gets fed with the contents from this file.
