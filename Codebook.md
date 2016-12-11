@@ -28,26 +28,42 @@ The transformations that have been performed on the input dataset are:
 
 ### READING 
 
-- Variable `features` from file `features.txt` 
-- Variable `activity_labels` from file `activity_labels.txt` 
-- Variable `train_features` from file `X_train.txt`
-- Variable `test_features` from file `X_test.txt`
-- Variable `train_activities` from file `y_train.txt`
-- Variable `test_activities` from file `y_test.txt`
-- Variable `train_subjects` from file `subject_train.txt`
-- Variable `test_subjects` from file `subject_test.txt`
+- Variable `activity_labels` becomes a dataframe from file `activity_labels.txt` 
+- Variable `train_features` becomes a dataframe from file `X_train.txt`
+- Variable `test_features` becomes a dataframe from file `X_test.txt`
+- Variable `train_activities` becomes a dataframe from file `y_train.txt`
+- Variable `test_activities` becomes a dataframe from file `y_test.txt`
+- Variable `train_subjects` becomes a dataframe from file `subject_train.txt`
+- Variable `test_subjects` becomes a dataframe from file `subject_test.txt`
 
 ### MERGE
 
 - Variable `features` is a merge of the observations (rows) of the variables `train_features` and `test_features`
 - Variable `activities` is a merge of the observations (rows) of the variables `train_activities` and `test_activities`
-- Variable `subjects` is a merge of the observations (rows) of the variables `train_subjects` and `test_subjects` 
+- Variable `subjects` is a merge of the observations (rows) of the variables `train_subjects` and `test_subjects`
+
+### VARIABLE NAMING
+
+- The columns from the dataset variable `features` get named according to the contents of the file `features.txt`
+- The only column from the dataset variable `activities` gets named `activity`
+- The only column from the dataset variable `subjects` gets named `SubjectId`
 
 ### SELECTION
 
-- Variable `selected_features`
+- Variable `selected_features` is a selection of the required columns on the features dataset (the columns including in its name "mean" or "std")
 
-...
+### JOIN
+
+- Variable `activity` becomes the descriptive name of the `activities` variable, by means of a join with with the `activity_labels` variable
+
+### COMBINATION
+
+- Variable `dataset` becomes the combination of the datasets from the `subjects`, `actitivities` and `selected_features` variables.
+
+### VARIABLE (RE)NAMING
+
+- The columns from the dataset variable `dataset` get renamed in order to make them more descriptive
+
 
 ## Output Dataset
 
