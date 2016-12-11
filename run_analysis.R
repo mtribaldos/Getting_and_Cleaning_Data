@@ -54,6 +54,8 @@ run_analysis <- function() {
     names(dataset) <- gsub("angle", "Angle", names(dataset))
     names(dataset) <- gsub("gravity", "Gravity", names(dataset))
 
+    write.table(names(dataset), file = "names_dataset.txt", row.names = FALSE);
+
     ## Calculate the mean of all variables after the "SubjectId" and "Activity" variables
     ## Order the observations in the result after "SubjectId" and "Activity" variables (again) 
     tidydataset <- aggregate(. ~ SubjectId + Activity, data = dataset, mean)
