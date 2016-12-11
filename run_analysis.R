@@ -36,10 +36,10 @@ run_analysis <- function() {
     activities <- merge(activities, activity_labels, by.x = "activity", by.y = "activity_id", all.x = TRUE)
     activity <- activities$activity_type
 
-    # Generate the definitive dataset
-    dataset <- cbind(subjects, Activity=activity, selected_features)
+    ## Generate the definitive dataset
+    dataset <- cbind(subjects, Activity = activity, selected_features)
     
-    # Enhance the column names to make it more descriptive
+    ## Enhance the column names to make it more descriptive
     names(dataset) <- gsub("Acc", "Accelerometer", names(dataset))
     names(dataset) <- gsub("Gyro", "Gyroscope", names(dataset))
     names(dataset) <- gsub("Mag", "Magnitude", names(dataset))
@@ -50,4 +50,9 @@ run_analysis <- function() {
     names(dataset) <- gsub("-freq", "Frequency", names(dataset))
     names(dataset) <- gsub("angle", "Angle", names(dataset))
     names(dataset) <- gsub("gravity", "Gravity", names(dataset))
+
+    ## Calculate the mean of all variables after the "SubjectId" and "Activity" variables
+    ## Order the observations in the result after "SubjectId" and "Activity" variables (again) 
+    tidydataset <- aggregate(. ~ SubjectId + Activity, data = dataset, mean)
+    tidydataset <- tidydataset[order(tidydataset$SubjectId, tidydataset$Activity),]
 }  
