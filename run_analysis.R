@@ -1,14 +1,17 @@
 
 
 run_analysis <- function() {
-    #download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", dest="dataset.zip")
-    #unzip("dataset.zip")
 
-    # NOTE: in header arguments, separator is ‘white space’, that is one or more spaces, tabs
-    
+    ## Download the original dataset from internet if there not exist the directory 
+    if (!dir.exists("UCI HAR Dataset")) {
+        download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", dest="dataset.zip")
+        unzip("dataset.zip")
+    }
+
     ## Read and merge test and training data. 
     ## Add the column names to the data. Use the features file as its header
     ## Select only some features based on its name 
+    ## NOTE: in header arguments, separator is ‘white space’, that is one or more spaces, tabs
     test_features <- read.csv("UCI HAR Dataset/test/X_test.txt", sep = "", header = FALSE)
     train_features <- read.csv("UCI HAR Dataset/train/X_train.txt", sep = "", header = FALSE)
     features <- rbind(test_features, train_features)   
