@@ -55,4 +55,7 @@ run_analysis <- function() {
     ## Order the observations in the result after "SubjectId" and "Activity" variables (again) 
     tidydataset <- aggregate(. ~ SubjectId + Activity, data = dataset, mean)
     tidydataset <- tidydataset[order(tidydataset$SubjectId, tidydataset$Activity),]
+
+    ## Write the tidy dataset to a file
+    write.table(tidydataset, file = "tidy_dataset.txt", row.names = FALSE)
 }  
