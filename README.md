@@ -29,4 +29,4 @@ Once the completion of `run_analysis()` the file "tidy_dataset.txt" is created. 
 
 ## Additional Information
 
-You can find additional information about the variables, data and transformations in the <CodeBook.md> file.
+You can find additional information about the variables, data and transformations in the `CodeBook.md` file.
