@@ -27,7 +27,7 @@ run_analysis <- function() {
     test_subjects <- read.csv("UCI HAR Dataset/test/subject_test.txt", sep = "", header = FALSE)
     train_subjects <- read.csv("UCI HAR Dataset/train/subject_train.txt", sep = "", header = FALSE)
     subjects <- rbind(test_subjects, train_subjects)
-    names(subjects) <- "subject_id"
+    names(subjects) <- "SubjectId"
 
     ## Read the activity labels
     ## Substitute activity id for activity type (descriptive)
@@ -37,5 +37,17 @@ run_analysis <- function() {
     activity <- activities$activity_type
 
     # Generate the definitive dataset
-    dataset <- cbind(selected_features, subjects, activity)
+    dataset <- cbind(subjects, Activity=activity, selected_features)
+    
+    # Enhance the column names to make it more descriptive
+    names(dataset) <- gsub("Acc", "Accelerometer", names(dataset))
+    names(dataset) <- gsub("Gyro", "Gyroscope", names(dataset))
+    names(dataset) <- gsub("Mag", "Magnitude", names(dataset))
+    names(dataset) <- gsub("^t", "Time", names(dataset))
+    names(dataset) <- gsub("^f", "Frequency", names(dataset))
+    names(dataset) <- gsub("-mean", "Mean", names(dataset))
+    names(dataset) <- gsub("-std", "StandardDeviation", names(dataset))
+    names(dataset) <- gsub("-freq", "Frequency", names(dataset))
+    names(dataset) <- gsub("angle", "Angle", names(dataset))
+    names(dataset) <- gsub("gravity", "Gravity", names(dataset))
 }  
