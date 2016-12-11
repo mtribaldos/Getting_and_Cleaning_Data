@@ -54,11 +54,11 @@ The transformations that have been performed on the input dataset are:
 
 ### JOIN
 
-- Variable `activity` becomes the descriptive name of the `activities` variable, by means of a join with with the `activity_labels` variable
+- Variable `activity` becomes the descriptive name (text) of the `activities` variable, by means of a join with with the `activity_labels` variable
 
 ### COMBINATION
 
-- Variable `dataset` becomes the combination of the datasets from the `subjects`, `actitivities` and `selected_features` variables.
+- Variable `dataset` becomes the combination of the datasets from the `subjects`, `activities` and `selected_features` variables.
 
 ### VARIABLE (RE)NAMING
 
