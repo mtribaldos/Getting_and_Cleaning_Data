@@ -68,93 +68,92 @@ The transformations that have been performed on the input dataset are:
 | ---- | 
 | SubjectId |
 | Activity | 
-
-"TimeBodyAccelerometerMean()-X"
-"TimeBodyAccelerometerMean()-Y"
-"TimeBodyAccelerometerMean()-Z"
-"TimeBodyAccelerometerStandardDeviation()-X"
-"TimeBodyAccelerometerStandardDeviation()-Y"
-"TimeBodyAccelerometerStandardDeviation()-Z"
-"TimeGravityAccelerometerMean()-X"
-"TimeGravityAccelerometerMean()-Y"
-"TimeGravityAccelerometerMean()-Z"
-"TimeGravityAccelerometerStandardDeviation()-X"
-"TimeGravityAccelerometerStandardDeviation()-Y"
-"TimeGravityAccelerometerStandardDeviation()-Z"
-"TimeBodyAccelerometerJerkMean()-X"
-"TimeBodyAccelerometerJerkMean()-Y"
-"TimeBodyAccelerometerJerkMean()-Z"
-"TimeBodyAccelerometerJerkStandardDeviation()-X"
-"TimeBodyAccelerometerJerkStandardDeviation()-Y"
-"TimeBodyAccelerometerJerkStandardDeviation()-Z"
-"TimeBodyGyroscopeMean()-X"
-"TimeBodyGyroscopeMean()-Y"
-"TimeBodyGyroscopeMean()-Z"
-"TimeBodyGyroscopeStandardDeviation()-X"
-"TimeBodyGyroscopeStandardDeviation()-Y"
-"TimeBodyGyroscopeStandardDeviation()-Z"
-"TimeBodyGyroscopeJerkMean()-X"
-"TimeBodyGyroscopeJerkMean()-Y"
-"TimeBodyGyroscopeJerkMean()-Z"
-"TimeBodyGyroscopeJerkStandardDeviation()-X"
-"TimeBodyGyroscopeJerkStandardDeviation()-Y"
-"TimeBodyGyroscopeJerkStandardDeviation()-Z"
-"TimeBodyAccelerometerMagnitudeMean()"
-"TimeBodyAccelerometerMagnitudeStandardDeviation()"
-"TimeGravityAccelerometerMagnitudeMean()"
-"TimeGravityAccelerometerMagnitudeStandardDeviation()"
-"TimeBodyAccelerometerJerkMagnitudeMean()"
-"TimeBodyAccelerometerJerkMagnitudeStandardDeviation()"
-"TimeBodyGyroscopeMagnitudeMean()"
-"TimeBodyGyroscopeMagnitudeStandardDeviation()"
-"TimeBodyGyroscopeJerkMagnitudeMean()"
-"TimeBodyGyroscopeJerkMagnitudeStandardDeviation()"
-"FrequencyBodyAccelerometerMean()-X"
-"FrequencyBodyAccelerometerMean()-Y"
-"FrequencyBodyAccelerometerMean()-Z"
-"FrequencyBodyAccelerometerStandardDeviation()-X"
-"FrequencyBodyAccelerometerStandardDeviation()-Y"
-"FrequencyBodyAccelerometerStandardDeviation()-Z"
-"FrequencyBodyAccelerometerMeanFreq()-X"
-"FrequencyBodyAccelerometerMeanFreq()-Y"
-"FrequencyBodyAccelerometerMeanFreq()-Z"
-"FrequencyBodyAccelerometerJerkMean()-X"
-"FrequencyBodyAccelerometerJerkMean()-Y"
-"FrequencyBodyAccelerometerJerkMean()-Z"
-"FrequencyBodyAccelerometerJerkStandardDeviation()-X"
-"FrequencyBodyAccelerometerJerkStandardDeviation()-Y"
-"FrequencyBodyAccelerometerJerkStandardDeviation()-Z"
-"FrequencyBodyAccelerometerJerkMeanFreq()-X"
-"FrequencyBodyAccelerometerJerkMeanFreq()-Y"
-"FrequencyBodyAccelerometerJerkMeanFreq()-Z"
-"FrequencyBodyGyroscopeMean()-X"
-"FrequencyBodyGyroscopeMean()-Y"
-"FrequencyBodyGyroscopeMean()-Z"
-"FrequencyBodyGyroscopeStandardDeviation()-X"
-"FrequencyBodyGyroscopeStandardDeviation()-Y"
-"FrequencyBodyGyroscopeStandardDeviation()-Z"
-"FrequencyBodyGyroscopeMeanFreq()-X"
-"FrequencyBodyGyroscopeMeanFreq()-Y"
-"FrequencyBodyGyroscopeMeanFreq()-Z"
-"FrequencyBodyAccelerometerMagnitudeMean()"
-"FrequencyBodyAccelerometerMagnitudeStandardDeviation()"
-"FrequencyBodyAccelerometerMagnitudeMeanFreq()"
-"FrequencyBodyBodyAccelerometerJerkMagnitudeMean()"
-"FrequencyBodyBodyAccelerometerJerkMagnitudeStandardDeviation()"
-"FrequencyBodyBodyAccelerometerJerkMagnitudeMeanFreq()"
-"FrequencyBodyBodyGyroscopeMagnitudeMean()"
-"FrequencyBodyBodyGyroscopeMagnitudeStandardDeviation()"
-"FrequencyBodyBodyGyroscopeMagnitudeMeanFreq()"
-"FrequencyBodyBodyGyroscopeJerkMagnitudeMean()"
-"FrequencyBodyBodyGyroscopeJerkMagnitudeStandardDeviation()"
-"FrequencyBodyBodyGyroscopeJerkMagnitudeMeanFreq()"
-"Angle(tBodyAccelerometerMean,Gravity)"
-"Angle(tBodyAccelerometerJerkMean),GravityMean)"
-"Angle(tBodyGyroscopeMean,GravityMean)"
-"Angle(tBodyGyroscopeJerkMean,GravityMean)"
-"Angle(X,GravityMean)"
-"Angle(Y,GravityMean)"
-"Angle(Z,GravityMean)"
+| TimeBodyAccelerometerMean()-X
+| TimeBodyAccelerometerMean()-Y
+| TimeBodyAccelerometerMean()-Z
+| TimeBodyAccelerometerStandardDeviation()-X
+| TimeBodyAccelerometerStandardDeviation()-Y
+| TimeBodyAccelerometerStandardDeviation()-Z
+| TimeGravityAccelerometerMean()-X
+| TimeGravityAccelerometerMean()-Y
+| TimeGravityAccelerometerMean()-Z
+| TimeGravityAccelerometerStandardDeviation()-X
+| TimeGravityAccelerometerStandardDeviation()-Y
+| TimeGravityAccelerometerStandardDeviation()-Z
+| TimeBodyAccelerometerJerkMean()-X
+| TimeBodyAccelerometerJerkMean()-Y
+| TimeBodyAccelerometerJerkMean()-Z
+| TimeBodyAccelerometerJerkStandardDeviation()-X
+| TimeBodyAccelerometerJerkStandardDeviation()-Y
+| TimeBodyAccelerometerJerkStandardDeviation()-Z
+| TimeBodyGyroscopeMean()-X
+| TimeBodyGyroscopeMean()-Y
+| TimeBodyGyroscopeMean()-Z
+| TimeBodyGyroscopeStandardDeviation()-X
+| TimeBodyGyroscopeStandardDeviation()-Y
+| TimeBodyGyroscopeStandardDeviation()-Z
+| TimeBodyGyroscopeJerkMean()-X
+| TimeBodyGyroscopeJerkMean()-Y
+| TimeBodyGyroscopeJerkMean()-Z
+| TimeBodyGyroscopeJerkStandardDeviation()-X
+| TimeBodyGyroscopeJerkStandardDeviation()-Y
+| TimeBodyGyroscopeJerkStandardDeviation()-Z
+| TimeBodyAccelerometerMagnitudeMean()
+| TimeBodyAccelerometerMagnitudeStandardDeviation()
+| TimeGravityAccelerometerMagnitudeMean()
+| TimeGravityAccelerometerMagnitudeStandardDeviation()
+| TimeBodyAccelerometerJerkMagnitudeMean()
+| TimeBodyAccelerometerJerkMagnitudeStandardDeviation()
+| TimeBodyGyroscopeMagnitudeMean()
+| TimeBodyGyroscopeMagnitudeStandardDeviation()
+| TimeBodyGyroscopeJerkMagnitudeMean()
+| TimeBodyGyroscopeJerkMagnitudeStandardDeviation()
+| FrequencyBodyAccelerometerMean()-X
+| FrequencyBodyAccelerometerMean()-Y
+| FrequencyBodyAccelerometerMean()-Z
+| FrequencyBodyAccelerometerStandardDeviation()-X
+| FrequencyBodyAccelerometerStandardDeviation()-Y
+| FrequencyBodyAccelerometerStandardDeviation()-Z
+| FrequencyBodyAccelerometerMeanFreq()-X
+| FrequencyBodyAccelerometerMeanFreq()-Y
+| FrequencyBodyAccelerometerMeanFreq()-Z
+| FrequencyBodyAccelerometerJerkMean()-X
+| FrequencyBodyAccelerometerJerkMean()-Y
+| FrequencyBodyAccelerometerJerkMean()-Z
+| FrequencyBodyAccelerometerJerkStandardDeviation()-X
+| FrequencyBodyAccelerometerJerkStandardDeviation()-Y
+| FrequencyBodyAccelerometerJerkStandardDeviation()-Z
+| FrequencyBodyAccelerometerJerkMeanFreq()-X
+| FrequencyBodyAccelerometerJerkMeanFreq()-Y
+| FrequencyBodyAccelerometerJerkMeanFreq()-Z
+| FrequencyBodyGyroscopeMean()-X
+| FrequencyBodyGyroscopeMean()-Y
+| FrequencyBodyGyroscopeMean()-Z
+| FrequencyBodyGyroscopeStandardDeviation()-X
+| FrequencyBodyGyroscopeStandardDeviation()-Y
+| FrequencyBodyGyroscopeStandardDeviation()-Z
+| FrequencyBodyGyroscopeMeanFreq()-X
+| FrequencyBodyGyroscopeMeanFreq()-Y
+| FrequencyBodyGyroscopeMeanFreq()-Z
+| FrequencyBodyAccelerometerMagnitudeMean()
+| FrequencyBodyAccelerometerMagnitudeStandardDeviation()
+| FrequencyBodyAccelerometerMagnitudeMeanFreq()
+| FrequencyBodyBodyAccelerometerJerkMagnitudeMean()
+| FrequencyBodyBodyAccelerometerJerkMagnitudeStandardDeviation()
+| FrequencyBodyBodyAccelerometerJerkMagnitudeMeanFreq()
+| FrequencyBodyBodyGyroscopeMagnitudeMean()
+| FrequencyBodyBodyGyroscopeMagnitudeStandardDeviation()
+| FrequencyBodyBodyGyroscopeMagnitudeMeanFreq()
+| FrequencyBodyBodyGyroscopeJerkMagnitudeMean()
+| FrequencyBodyBodyGyroscopeJerkMagnitudeStandardDeviation()
+| FrequencyBodyBodyGyroscopeJerkMagnitudeMeanFreq()
+| Angle(tBodyAccelerometerMean,Gravity)
+| Angle(tBodyAccelerometerJerkMean),GravityMean)
+| Angle(tBodyGyroscopeMean,GravityMean)
+| Angle(tBodyGyroscopeJerkMean,GravityMean)
+| Angle(X,GravityMean)
+| Angle(Y,GravityMean)
+| Angle(Z,GravityMean)
 
 
 ## Output dataset
